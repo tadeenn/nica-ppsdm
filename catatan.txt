@@ -1,0 +1,3 @@
+1. buat website dengan kebutuhan seperti web ppko 
+2. buat website terhubung dengan API Firebase: https://console.firebase.google.com/project/nica-divisipkm/database/nica-divisipkm-default-rtdb/data/~2F
+3. buat tombol penyiraman khusus dengan arahan firebase sebagai penyimpan data tanaman dan perintah
