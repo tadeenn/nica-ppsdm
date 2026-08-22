@@ -1,0 +1,221 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Rekomendasi Pupuk - NICA Digital Agriculture</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#002117",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#d9dadb",
+                        "secondary-fixed-dim": "#95d3ba",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "on-primary-fixed": "#002114",
+                        "surface-container-low": "#f3f4f5",
+                        "on-secondary-container": "#306d58",
+                        "on-secondary-fixed-variant": "#0b513d",
+                        "tertiary": "#006947",
+                        "background": "#f8f9fa",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#adedd3",
+                        "on-surface": "#191c1d",
+                        "on-background": "#191c1d",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#edeeef",
+                        "tertiary-fixed": "#6ffbbe",
+                        "on-tertiary-fixed": "#002113",
+                        "on-primary-container": "#f5fff7",
+                        "primary-container": "#00855d",
+                        "on-primary-fixed-variant": "#005137",
+                        "inverse-primary": "#68dba9",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#68dba9",
+                        "surface-bright": "#f8f9fa",
+                        "surface-container-high": "#e7e8e9",
+                        "on-tertiary-container": "#f5fff6",
+                        "error-container": "#ffdad6",
+                        "primary": "#006948",
+                        "inverse-on-surface": "#f0f1f2",
+                        "inverse-surface": "#2e3132",
+                        "secondary": "#2b6954",
+                        "outline": "#6d7a72",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#85f8c4",
+                        "surface": "#f8f9fa",
+                        "outline-variant": "#bccac0",
+                        "secondary-fixed": "#b0f0d6",
+                        "surface-tint": "#006c4a",
+                        "on-surface-variant": "#3d4a42",
+                        "surface-variant": "#e1e3e4",
+                        "tertiary-container": "#00855b",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e1e3e4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-margin": "16px",
+                        "gutter": "12px",
+                        "md": "16px",
+                        "base": "4px",
+                        "sm": "8px",
+                        "xl": "32px",
+                        "xs": "4px",
+                        "lg": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "data-display": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "label-caps": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "data-display": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        body {
+            background-color: #f8f9fa;
+        }
+        /* Hide scrollbar for clean UI but keep functionality */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        * {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-lg pb-24 selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-on-surface text-primary dark:text-primary-fixed sticky top-0 w-full z-50 border-b border-outline-variant dark:border-outline shadow-sm flex items-center justify-between px-container-margin h-16 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-sm"><button type="button" onclick="window.location.href='index.html'" class="flex items-center justify-center w-8 h-8 rounded-full hover:bg-surface-variant transition-colors" aria-label="Back to Dashboard"><span class="material-symbols-outlined text-headline-md" data-icon="arrow_back">arrow_back</span></button>
+
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Rekomendasi Pupuk</h1>
+</div>
+<img alt="Divisi PKM HMP PTI UMS Logo" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UpoobexbH9VMsT5-Pr79rHaXTDW9yjDs0WYvOpxoXFbDl3uo8SekWY7tBjGUsB6W5-XDAwd-Ol8JGmbZbCaC1pzrRbdOObMifU3-d_bd-NfTX4963ppfwFYmJ7jMVFs1DYvvd0CqKcbNg7nvU1i7Wi_IEoA6wKeTZR2ltyxeAOXU1ZfSmidQpEFd-bzj3jNKfLeH7SErMaTOoe22C50Gp1pOy6yGAIrxUR9-_0DkLD05Cm96MX2n6StcWdmMeD6J55grGBZgZBtw">
+</header>
+<!-- Main Content Canvas -->
+<main class="max-w-7xl mx-auto px-container-margin py-lg grid grid-cols-4 md:grid-cols-12 gap-gutter">
+<!-- Page Title -->
+<div class="col-span-4 md:col-span-12 mb-sm flex justify-between items-end">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Rekomendasi Pupuk</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-xs">Rekomendasi pupuk terbaik berdasarkan analisis AI untuk kondisi tanah saat ini.</p>
+</div>
+<button class="hidden md:flex items-center gap-xs px-sm py-xs bg-surface-container-highest text-on-surface rounded-lg font-label-caps text-label-caps hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[16px]" data-icon="filter_list">filter_list</span> Filter
+            </button>
+</div>
+<!-- Product Grid (Bento Style Layout) -->
+<div class="col-span-4 md:col-span-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Product 1 -->
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden hover:border-primary transition-colors shadow-[0px_2px_4px_rgba(0,0,0,0.05)] hover:shadow-[0px_4px_8px_rgba(0,0,0,0.1)] group flex flex-col cursor-pointer">
+<div class="h-48 overflow-hidden relative bg-surface-container-low flex items-center justify-center p-md">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="A clean, well-lit studio shot of Pupuk NPK Mutiara 16-16-16 Biru product packaging. The packaging is clearly visible against a white background, highlighting its blue color and branding. The lighting is soft and even, typical of modern e-commerce product photography, ensuring all text and details are legible. The mood is professional and straightforward, suitable for an agricultural supply catalog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsMwqxQt6AUhvgSSiXE2ItrJfm_ZMhKbvNnu61s6Ru4z3C4mtxVydQI19mzB-jVAxp0RtPtfVE5EcLoEg-IHJ4pA_FIu9a0dzEPNDpuppPoCnAqQ0t12ESx6VwMmd2n6K-_fTjVYfSm9nTSjjHcxFpTAsBZYmqmhv7WXXD-EfXEItzGzswr9pEjUZJl3-MT8ZsKtEvizcms0ZgSpDRIMBQAyh0Xxkc_0W_tvLfwGgZEzunHynWm2XZOmf1M-aW0JDTznikbKeBfHs">
+<div class="absolute top-2 left-2 bg-primary-container text-on-primary-container font-label-caps text-label-caps px-2 py-1 rounded-full flex items-center gap-xs"><span class="material-symbols-outlined text-[12px] fill" data-icon="star">star</span> Terlaris</div>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface line-clamp-2 mb-xs">Pupuk NPK Mutiara 16-16-16 Biru</h3>
+<div class="mt-auto pt-sm flex justify-between items-end border-t border-surface-variant">
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant block mb-1">Harga Estimasi</span>
+<span class="font-headline-sm text-headline-sm text-primary">Rp 18.500</span>
+</div>
+<a href="https://shopee.co.id" target="_blank" aria-label="Buy on Shopee" class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden hover:border-primary transition-colors shadow-[0px_2px_4px_rgba(0,0,0,0.05)] hover:shadow-[0px_4px_8px_rgba(0,0,0,0.1)] group flex flex-col cursor-pointer">
+<div class="h-48 overflow-hidden relative bg-surface-container-low flex items-center justify-center p-md">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="A clean, well-lit studio shot of Pupuk Organik Cair GDM 1 Liter product packaging. The liquid fertilizer bottle is clearly visible against a white background, highlighting its branding and shape. The lighting is soft and even, typical of modern e-commerce product photography, ensuring all text and details are legible. The mood is professional and straightforward, suitable for an agricultural supply catalog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNx4r7DFs-ZAh3H9v7GEIqobCtCYZ7BUxnE2NK8Ns5zmNTPgpkoQb3V4YWyMqKXvGTlxXMgUlowGoL3Q6I4Qggpi5FqKsgw4aVQxm49kdX16flkC86r0WJUGrqz5durwFgBYYzqSRqw3AvA2GyVvZa3VKWMJuyWmnyI6pKdbzmiwzeTbP9Pu7Aijf4FvXXAI4B1XUJsI4ciPOI3ABjE2i-oIAdtIq_aRANqw1CTvGtb9XiIEQlrciulZTck6iQXx_qF3ztzRb8SlI">
+<div class="absolute top-2 left-2 bg-secondary-container text-on-secondary-container font-label-caps text-label-caps px-2 py-1 rounded-full flex items-center gap-xs"><span class="material-symbols-outlined text-[12px] fill" data-icon="eco">eco</span> Rekomendasi</div>
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface line-clamp-2 mb-xs">Pupuk Organik Cair GDM 1 Liter</h3>
+<div class="mt-auto pt-sm flex justify-between items-end border-t border-surface-variant">
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant block mb-1">Harga Estimasi</span>
+<span class="font-headline-sm text-headline-sm text-primary">Rp 45.000</span>
+</div>
+<a href="https://shopee.co.id" target="_blank" aria-label="Buy on Shopee" class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden hover:border-primary transition-colors shadow-[0px_2px_4px_rgba(0,0,0,0.05)] hover:shadow-[0px_4px_8px_rgba(0,0,0,0.1)] group flex flex-col cursor-pointer md:col-span-2 lg:col-span-1">
+<div class="h-48 overflow-hidden relative bg-surface-container-low flex items-center justify-center p-md">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="A clean, well-lit studio shot of Pupuk Urea Subsidi Nitrea 50kg product packaging. The large sack is clearly visible against a white background, highlighting its branding and text. The lighting is soft and even, typical of modern e-commerce product photography, ensuring all text and details are legible. The mood is professional and straightforward, suitable for an agricultural supply catalog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVH7vcRaiWIllcUovZHk808xlHCWu9DQqTzwin75vYczIarudC6cJkAyduLpL8dgRseB7MYkoURyshoKFZEERD8eTZIaKun_YmcUUTPglbF9TTW2L_3kwRjhJE9XVpjIwGneAZ5yzvii5E8ynyVCS04tp61ov5Y13mQk3OHRp0XYO6ar4hU3UmuklPJy2Hryb5nkkOQBscsHNApPwySubshJT1FnmcR6UBOXSyFeOfo5-h5p3E1FGSM7h64Dwks8RqmMMYSPP_tNs">
+
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface line-clamp-2 mb-xs">Pupuk Urea Nitrea 50kg</h3>
+<div class="mt-auto pt-sm flex justify-between items-end border-t border-surface-variant">
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant block mb-1">Harga Estimasi</span>
+<span class="font-headline-sm text-headline-sm text-primary">Rp 112.500</span>
+</div>
+<a href="https://shopee.co.id" target="_blank" aria-label="Buy on Shopee" class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="bg-surface-container-lowest rounded-xl border border-surface-variant overflow-hidden hover:border-primary transition-colors shadow-[0px_2px_4px_rgba(0,0,0,0.05)] hover:shadow-[0px_4px_8px_rgba(0,0,0,0.1)] group flex flex-col cursor-pointer md:col-span-2 lg:col-span-1">
+<div class="h-48 overflow-hidden relative bg-surface-container-low flex items-center justify-center p-md">
+<img class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" data-alt="A clean, well-lit studio shot of AB Mix Sayuran Daun Premium product packaging. The packaging is clearly visible against a white background, highlighting its branding. The lighting is soft and even, typical of modern e-commerce product photography, ensuring all text and details are legible. The mood is professional and straightforward, suitable for an agricultural supply catalog." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAroOOzXLDaPLYLfOEb56S3P_6rkHZl4HUMoAZDSeijaaJeunaZ-aLz72OThZ28ZRZpWQLIddko3YDJduT62IoMbX8G5p19z5M8KO9z0OSR30ILxmw-DnAOsiOj_N0jePNOLWs-W_VEtdkjatPHN0EcgyBzIBYNRgyZyljFPohHHCKPRb1VV0kn7p2GMeR1UI38Z3A8mmETt7tEga4Yq0bEG7R3knvPkIupnWZLof80wCwu9P6CqmGwmmfgxqFVTJNSacZUn_t_0ag">
+</div>
+<div class="p-md flex flex-col flex-grow">
+<h3 class="font-body-lg text-body-lg font-semibold text-on-surface line-clamp-2 mb-xs">AB Mix Sayuran Daun Premium</h3>
+<div class="mt-auto pt-sm flex justify-between items-end border-t border-surface-variant">
+<div>
+<span class="font-label-caps text-label-caps text-on-surface-variant block mb-1">Harga Estimasi</span>
+<span class="font-headline-sm text-headline-sm text-primary">Rp 35.000</span>
+</div>
+<a href="https://shopee.co.id" target="_blank" aria-label="Buy on Shopee" class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface hover:bg-primary-container hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>
