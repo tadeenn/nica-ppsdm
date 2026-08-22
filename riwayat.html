@@ -1,0 +1,292 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>NICA - Riwayat</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-container": "#00855b",
+                    "surface": "#f8f9fa",
+                    "on-secondary-fixed-variant": "#0b513d",
+                    "on-background": "#191c1d",
+                    "on-tertiary-fixed-variant": "#005236",
+                    "surface-dim": "#d9dadb",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#002117",
+                    "on-secondary-container": "#306d58",
+                    "inverse-on-surface": "#f0f1f2",
+                    "secondary-fixed-dim": "#95d3ba",
+                    "inverse-surface": "#2e3132",
+                    "tertiary": "#006947",
+                    "error-container": "#ffdad6",
+                    "on-surface-variant": "#3d4a42",
+                    "on-primary-fixed": "#002114",
+                    "on-tertiary": "#ffffff",
+                    "outline": "#6d7a72",
+                    "primary": "#006948",
+                    "secondary-fixed": "#b0f0d6",
+                    "surface-bright": "#f8f9fa",
+                    "background": "#f8f9fa",
+                    "surface-variant": "#e1e3e4",
+                    "on-primary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "on-surface": "#191c1d",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-tertiary-container": "#f5fff6",
+                    "surface-tint": "#006c4a",
+                    "primary-fixed": "#85f8c4",
+                    "error": "#ba1a1a",
+                    "inverse-primary": "#68dba9",
+                    "on-primary-fixed-variant": "#005137",
+                    "secondary-container": "#adedd3",
+                    "on-tertiary-fixed": "#002113",
+                    "primary-container": "#00855d",
+                    "tertiary-fixed-dim": "#4edea3",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#f5fff7",
+                    "tertiary-fixed": "#6ffbbe",
+                    "surface-container-low": "#f3f4f5",
+                    "surface-container": "#edeeef",
+                    "outline-variant": "#bccac0",
+                    "primary-fixed-dim": "#68dba9",
+                    "surface-container-high": "#e7e8e9",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary": "#2b6954"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "32px",
+                    "container-margin": "16px",
+                    "md": "16px",
+                    "base": "4px",
+                    "gutter": "12px",
+                    "lg": "24px",
+                    "xs": "4px",
+                    "sm": "8px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "headline-sm": ["Inter"],
+                    "data-display": ["Inter"],
+                    "label-caps": ["Inter"]
+            },
+            "fontSize": {
+                    "display-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                    "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                    "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                    "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                    "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                    "data-display": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                    "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; }
+        .chart-container { position: relative; height: 60vh; width: 100%; }
+        /* Tonal layering & soft outlines */
+        .card-layer-1 {
+            background-color: #ffffff;
+            border: 1px solid #E5E7EB;
+            box-shadow: 0px 2px 4px rgba(0,0,0,0.05);
+            transition: all 0.2s ease-in-out;
+        }
+        .card-layer-1:hover {
+            border-color: #006948; /* primary emerald */
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen pb-20 md:pb-0">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-on-surface text-primary dark:text-primary-fixed sticky top-0 w-full z-50 border-b border-outline-variant dark:border-outline shadow-sm flex items-center justify-between px-container-margin h-16 w-full max-w-7xl mx-auto"><div class="flex items-center gap-sm"><img alt="NICA Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_J8iLaKUjf5AwtjgF6RueGRVht8GKeZnoWxnsvVkS9vGt2R9N9nfcNvDUGe6ut9dHnzprhjCFqipIo_39Hdph8V7T4Qe7Q-q7ZQFQwmAaoJAfLHVvWH9fean0JdBi3-Vo-ry396o7MeuHg_OUJMnWg7lIpjk1zTsNBQf4MQi4X9QYQBsr1mD5vja5_6l8arDQM1DW5IDZ5QOkoP2am-r27dR5ExGwIhwP53jT1lE8OeswQhxz34palsdsK9APWdSeQqs"><span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Riwayat</span></div><div class=""><img alt="Divisi PKM HMP PTI UMS Logo" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXcS5PI5P2jQe78w4OMWSNBGcwQkS6N8x4xQCU0Ixjl4Ak0fdj-osGz2H0jsquwymkk6D8Cu7nPjGTCRPSNs7KW2QY0fHJynGbSon-tdWjFjWQlSzmVP6g3QLd8ZWSwD7uRaNcRiEhNc-jUKTfIa7bXciZ6d_I9euIbUMH7ziGjhLI6sG1mX2Y_oip3KU2ux4LpKkVUqvDlO7N71o0ThGyzBsjAEPjMMsA-48zJjzkZn2sYV9z_vk-Y2nj_oSKRVDt2Iw"></div></header>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-container-margin py-lg flex flex-col gap-lg">
+<!-- Header & Filters -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-md">
+<div>
+<h1 class="font-headline-md text-headline-md text-on-surface mb-xs">Riwayat</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Data historis untuk sensor lingkungan.</p>
+</div>
+<div class="flex bg-surface-container-low rounded-lg p-xs border border-outline-variant w-full md:w-auto overflow-x-auto">
+<button class="font-label-caps text-label-caps px-4 py-2 rounded bg-primary text-on-primary shadow-sm whitespace-nowrap transition-colors">24H</button>
+<button class="font-label-caps text-label-caps px-4 py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors whitespace-nowrap">7D</button>
+<button class="font-label-caps text-label-caps px-4 py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors whitespace-nowrap">30D</button>
+<button class="font-label-caps text-label-caps px-4 py-2 rounded text-on-surface-variant hover:bg-surface-container-high hover:text-primary transition-colors whitespace-nowrap">SEMUA</button>
+</div>
+</div>
+<!-- Chart Card (Layer 1) -->
+<div class="card-layer-1 rounded-xl p-md flex flex-col gap-md h-full">
+<div class="flex justify-between items-center border-b border-surface-container pb-sm">
+<h2 class="font-label-caps text-label-caps text-primary">Tren Sensor</h2>
+<div class="flex gap-sm">
+<!-- Legend Indicators (Custom HTML legend to match style) -->
+<div class="flex items-center gap-xs">
+<div class="w-3 h-3 rounded-full bg-primary"></div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kelembapan (%)</span>
+</div>
+<div class="flex items-center gap-xs">
+<div class="w-3 h-3 rounded-full bg-[#3b82f6]"></div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Suhu (°C)</span>
+</div>
+</div>
+</div>
+<div class="chart-container flex-grow">
+<canvas height="530" id="historyChart" style="display: block; box-sizing: border-box; height: 530px; width: 324px;" width="324"></canvas>
+</div>
+</div>
+<!-- Statistical Summary Cards -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-md">
+<div class="card-layer-1 rounded-lg p-md flex flex-col justify-center items-center text-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-xs">Rata-rata Kelembapan</span>
+<span class="font-data-display text-data-display text-primary">68%</span>
+</div>
+<div class="card-layer-1 rounded-lg p-md flex flex-col justify-center items-center text-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-xs">Kelembapan Puncak</span>
+<span class="font-data-display text-data-display text-primary">82%</span>
+</div>
+<div class="card-layer-1 rounded-lg p-md flex flex-col justify-center items-center text-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-xs">Rata-rata Suhu</span>
+<span class="font-data-display text-data-display text-[#3b82f6]">24°C</span>
+</div>
+<div class="card-layer-1 rounded-lg p-md flex flex-col justify-center items-center text-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant mb-xs">Suhu Puncak</span>
+<span class="font-data-display text-data-display text-[#3b82f6]">28°C</span>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden bg-surface dark:bg-on-surface border-t border-outline-variant dark:border-outline shadow-lg fixed bottom-0 left-0 w-full flex justify-around items-center py-2 px-4 z-50"><a class="flex flex-col items-center justify-center dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed duration-100 text-on-surface" href="#"><span class="material-symbols-outlined">dashboard</span><span class="font-label-caps text-label-caps mt-1">Dashboard</span></a><a class="flex flex-col items-center justify-center dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed duration-100 text-on-surface" href="#"><span class="material-symbols-outlined">tune</span><span class="font-label-caps text-label-caps mt-1">Kontrol</span></a><a class="flex flex-col items-center justify-center dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed duration-100 text-on-surface" href="#"><span class="material-symbols-outlined">schedule</span><span class="font-label-caps text-label-caps mt-1">Jadwal</span></a><a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary text-on-secondary-container dark:text-on-secondary rounded-full px-4 py-1 duration-100" href="#"><span class="material-symbols-outlined">show_chart</span><span class="font-label-caps text-label-caps mt-1">Riwayat</span></a></nav>
+<!-- Chart Configuration Script -->
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('historyChart').getContext('2d');
+            
+            // Dummy Data generation for visual representation
+            const labels = Array.from({length: 24}, (_, i) => `${i}:00`);
+            const moistureData = Array.from({length: 24}, () => Math.floor(Math.random() * (85 - 55 + 1) + 55));
+            const tempData = Array.from({length: 24}, () => Math.floor(Math.random() * (30 - 20 + 1) + 20));
+
+            // Create gradient for moisture area
+            const moistureGradient = ctx.createLinearGradient(0, 0, 0, 400);
+            moistureGradient.addColorStop(0, 'rgba(0, 105, 72, 0.15)'); // primary emerald 15%
+            moistureGradient.addColorStop(1, 'rgba(0, 105, 72, 0)');
+
+            // Create gradient for temp area
+            const tempGradient = ctx.createLinearGradient(0, 0, 0, 400);
+            tempGradient.addColorStop(0, 'rgba(59, 130, 246, 0.15)'); // blue 15%
+            tempGradient.addColorStop(1, 'rgba(59, 130, 246, 0)');
+
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: 'Kelembapan Tanah (%)',
+                            data: moistureData,
+                            borderColor: '#006948', // primary emerald
+                            backgroundColor: moistureGradient,
+                            borderWidth: 2,
+                            pointRadius: 0,
+                            pointHoverRadius: 6,
+                            pointBackgroundColor: '#ffffff',
+                            pointBorderColor: '#006948',
+                            pointBorderWidth: 2,
+                            fill: true,
+                            tension: 0.4
+                        },
+                        {
+                            label: 'Suhu (°C)',
+                            data: tempData,
+                            borderColor: '#3b82f6', // distinct blue for temp
+                            backgroundColor: tempGradient,
+                            borderWidth: 2,
+                            pointRadius: 0,
+                            pointHoverRadius: 6,
+                            pointBackgroundColor: '#ffffff',
+                            pointBorderColor: '#3b82f6',
+                            pointBorderWidth: 2,
+                            fill: true,
+                            tension: 0.4
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: {
+                        mode: 'index',
+                        intersect: false,
+                    },
+                    plugins: {
+                        legend: {
+                            display: false // Using custom HTML legend above
+                        },
+                        tooltip: {
+                            backgroundColor: '#002114', // very dark green (on-primary-fixed)
+                            titleColor: '#ffffff',
+                            bodyColor: '#ffffff',
+                            cornerRadius: 8,
+                            padding: 12,
+                            displayColors: true,
+                            boxPadding: 6
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: {
+                                display: false,
+                                drawBorder: false
+                            },
+                            ticks: {
+                                color: '#6d7a72', // outline
+                                maxTicksLimit: 8,
+                                font: {
+                                    family: 'Inter',
+                                    size: 12
+                                }
+                            }
+                        },
+                        y: {
+                            grid: {
+                                color: '#F3F4F6', // light grid lines
+                                drawBorder: false,
+                            },
+                            ticks: {
+                                color: '#6d7a72', // outline
+                                font: {
+                                    family: 'Inter',
+                                    size: 12
+                                }
+                            },
+                            beginAtZero: false,
+                            min: 10,
+                            max: 100
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+
+</body></html>
